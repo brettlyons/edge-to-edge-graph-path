@@ -31,10 +31,10 @@ function solve(graph, startingPoint) {
     potentialMoves = generatePotentialMove(currentCenter, previousCenter);
     console.log(potentialMoves);
 
-      // console.log(potentialMoves.map(function (offsets) {
-      //   console.log("MAP HIT");
-      //   return checkAdjacents(currentCenter, graph[offsets[0] + currentCenter[0]][offsets[1] + currentCenter[1]]);
-      // }).some(function(element) {return element;}));
+      console.log(potentialMoves.map(function (offsets) {
+        console.log("MAP HIT");
+        return checkAdjacents(currentCenter, graph[offsets[0] + currentCenter[0]][offsets[1] + currentCenter[1]]);
+      }).some(function(element) {return element;}));
     };
 
   function generatePotentialMove(currentCenter, previousCenter) {
@@ -55,6 +55,11 @@ console.log(solve(unsolvable, [0,3])); // false
 
 
 
+function generatePossiblePaths(graph, graphPosition) {
+  // given a graph and a position, returns an array of possible moves from that position.
+  // an empty array / null return means no possible moves aka a dead end
+
+}
 
 
 
