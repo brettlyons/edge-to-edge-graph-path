@@ -35,5 +35,3 @@ function walkPath(graph, startingPoint) {
   return moveOne(startingPoint, [6,1]);
 }
 
-console.log(walkPath(solvable, [7,1]));
-console.log(walkPath(unsolvable, [0,3]));
